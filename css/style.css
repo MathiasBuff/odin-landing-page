@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: Roboto, sans-serif;
     height: 100vh;
     margin: 0;
     display: flex;
@@ -17,7 +18,7 @@ body {
 .hero,
 .footer {
     background-color: #1f2937;
-    color: #f9fAf8;
+    color: #f9faf8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +29,7 @@ body {
 }
 
 .signup,
-.ad {
+.ad-box {
     background-color: #3882f6;
 }
 
@@ -50,10 +51,27 @@ body {
 }
 
 .ad-box {
+    align-self: center;
+    color: #f9faf8;
     display: flex;
+    justify-content: space-evenly;
+    border-radius: 8px;
     align-items: center;
     flex-basis: 100px;
-    padding: 20px 0;
+    width: 800px;
+    margin: 20px 0;
+}
+
+.ad-title {
+    font-size: large;
+    font-weight: 700;
+}
+
+.ad-box>.signup {
+    color: inherit;
+    border-radius: 6px;
+    padding: 4px 20px;
+    border: 2px solid #f9faf8;
 }
 
 .information {
