@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    flex-shrink: 0;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.header,
+.hero,
+.footer {
+    background-color: #1f2937;
+    color: #f9fAf8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.signup,
+.ad {
+    background-color: #3882f6;
+}
+
+.header,
+.footer {
+    flex-basis: 40px;
+}
+
+.hero {
+    flex-basis: 300px;
+}
+
+.information {
+    flex-basis: 300px;
+}
+
+.quote {
+    flex-basis: 200px;
+}
+
+.ad-box {
+    display: flex;
+    align-items: center;
+    flex-basis: 100px;
+    padding: 20px 0;
+}
+
+.information {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    justify-content: center;
+}
+
+.header-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.info-container {
+    display: flex;
+}
