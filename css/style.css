@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
 
-* {
-    flex-shrink: 0;
-}
-
 body {
     font-family: Roboto, sans-serif;
     height: 100vh;
@@ -14,14 +10,19 @@ body {
     align-items: stretch;
 }
 
+body>* {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 16px 200px;
+}
+
 .header,
 .hero,
 .footer {
     background-color: #1f2937;
     color: #f9faf8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .quote {
@@ -36,6 +37,18 @@ body {
 .header,
 .footer {
     flex-basis: 40px;
+    /* padding: 16px; */
+}
+
+.header {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header-links {
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .hero {
@@ -116,9 +129,9 @@ body {
     align-items: center;
 }
 
-.footer {
+/* .footer {
     justify-content: center;
-}
+} */
 
 .header-links {
     display: flex;
