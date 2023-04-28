@@ -42,8 +42,23 @@ body {
     flex-basis: 300px;
 }
 
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 500px;
+}
+
 .information {
     flex-basis: 300px;
+}
+
+.labeled-image>img {
+    border: 4px solid #3882f6;
+    border-radius: 12px;
+    width: 100px;
+    height: 100px;
+    margin: 8px;
 }
 
 .quote {
