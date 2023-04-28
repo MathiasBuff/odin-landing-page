@@ -87,15 +87,40 @@ body>* {
 }
 
 .information {
-    flex-basis: 300px;
+    flex-basis: 400px;
+}
+
+.info-header {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 40px auto;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.labeled-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .labeled-image>img {
     border: 4px solid #3882f6;
     border-radius: 12px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: 8px;
+}
+
+.labeled-image>div {
+    text-align: center;
+    width: 150px;
 }
 
 .quote {
