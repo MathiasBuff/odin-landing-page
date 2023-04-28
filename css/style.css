@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,800;1,300&display=swap');
 
 body {
     font-family: Roboto, sans-serif;
     height: 100vh;
+    width: 100vw;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -46,20 +47,43 @@ body>* {
 }
 
 .header-links {
-    gap: 8px;
-    font-size: 16px;
+    gap: 16px;
+    font-size: 18px;
     font-weight: 400;
+    color: #e5e7eb;
 }
 
 .hero {
-    flex-basis: 300px;
+    flex-basis: 400px;
+    gap: 32px;
 }
 
 .hero-container {
     display: flex;
     flex-direction: column;
+    gap: 8px;
     align-items: flex-start;
     flex-basis: 500px;
+}
+
+.hero .main-text {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.hero .secondary-text {
+    color: #e5e7eb;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hero .signup {
+    
+    color: inherit;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 8px 40px;
+    border: 2px solid #1f2937;
 }
 
 .information {
