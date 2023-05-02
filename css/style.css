@@ -11,37 +11,81 @@ body {
     align-items: stretch;
 }
 
-body>* {
+.banner {
+    width: auto;
+    background-color: #1f2937;
+    color: #f9faf8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 65%;
+    background-color: #1f2937;
+    color: #f9faf8;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
-    padding: 16px 200px;
+    padding: 2% 0;
 }
 
-.header,
-.hero,
-.footer {
+.hero {
+    width: 65%;
     background-color: #1f2937;
     color: #f9faf8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3% 0;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0;
 }
 
 .quote {
     background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 10% 0;
 }
 
-.signup,
 .ad-box {
+    flex: 0;
     background-color: #3882f6;
+    align-self: center;
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+    align-items: center;
+    flex-basis: 120px;
+    width: 70%;
+    margin: 5%;
+    padding: 36px;
 }
 
-.header,
 .footer {
+    flex: 0;
     flex-basis: 40px;
-    /* padding: 16px; */
+    background-color: #1f2937;
+    color: #f9faf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 2%;
 }
 
-.header {
+.logo {
     font-size: 24px;
     font-weight: 700;
 }
@@ -63,7 +107,12 @@ body>* {
     flex-direction: column;
     gap: 8px;
     align-items: flex-start;
-    flex-basis: 500px;
+    width: 45%;
+}
+
+.hero img {
+    width: 45%;
+    height: auto;
 }
 
 .hero .main-text {
@@ -78,16 +127,13 @@ body>* {
 }
 
 .hero .signup {
-    
     color: inherit;
     font-size: 18px;
     border-radius: 8px;
+    margin: 8px 0;
     padding: 8px 40px;
     border: 2px solid #1f2937;
-}
-
-.information {
-    flex-basis: 400px;
+    background-color: #3882f6;
 }
 
 .info-header {
@@ -95,12 +141,15 @@ body>* {
     font-size: 36px;
     font-weight: 800;
     margin: 40px auto;
+    text-align: center;
 }
 
 .info-container {
+    width: 60%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: space-evenly;
+    flex-wrap: wrap;
     gap: 32px;
 }
 
@@ -112,9 +161,9 @@ body>* {
 
 .labeled-image>img {
     border: 4px solid #3882f6;
-    border-radius: 12px;
-    width: 150px;
-    height: 150px;
+    border-radius: 15%;
+    width: 100%;
+    height: auto;
     margin: 8px;
 }
 
@@ -123,15 +172,8 @@ body>* {
     width: 150px;
 }
 
-.quote {
-    flex-basis: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .quote-text {
-    width: 800px;
+    width: 50%;
     padding: 5px;
     font-size: 36px;
     font-style: italic;
@@ -140,23 +182,11 @@ body>* {
 }
 
 .quote-author {
-    width: 800px;
+    width: 50%;
     padding: 5px;
     font-size: 24px;
     font-weight: 700;
     text-align: right;
-}
-
-.ad-box {
-    align-self: center;
-    color: #f9faf8;
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 8px;
-    align-items: center;
-    flex-basis: 120px;
-    width: 1000px;
-    margin: 20px 0;
 }
 
 .ad-title {
@@ -164,31 +194,23 @@ body>* {
     font-weight: 700;
 }
 
+.ad-subtitle {
+    font-size: 18px;
+}
+
 .ad-box>.signup {
     color: inherit;
+    font-size: 18px;
+    font-weight: 700;
     border-radius: 6px;
-    padding: 4px 20px;
+    padding: 8px 36px;
     border: 2px solid #f9faf8;
+    background-color: #3882f6;
 }
-
-.information {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* .footer {
-    justify-content: center;
-} */
 
 .header-links {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.info-container {
-    display: flex;
 }
