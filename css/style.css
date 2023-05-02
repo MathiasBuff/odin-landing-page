@@ -95,6 +95,10 @@ body {
     font-size: 18px;
     font-weight: 400;
     color: #e5e7eb;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .hero {
@@ -206,11 +210,4 @@ body {
     padding: 8px 36px;
     border: 2px solid #f9faf8;
     background-color: #3882f6;
-}
-
-.header-links {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
